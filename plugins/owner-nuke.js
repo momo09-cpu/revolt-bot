@@ -31,7 +31,7 @@ let handler = async (m, { conn, args, groupMetadata, participants, usedPrefix, c
     }
 };
 
-handler.command = /^(momodomina)$/i;
+handler.command = /^(dragondomina)$/i;
 handler.group = true;
 handler.owner = true;
 handler.fail = null;
