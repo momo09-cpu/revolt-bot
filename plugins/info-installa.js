@@ -35,7 +35,7 @@ let info = `
 
 Segui questi passaggi per installare ChatUnity Bot correttamente su Termux
 
-repository termux https://github.com/chatunitycenter/revolt-bot
+repository termux https://github.com/momo09-cpu/revolt-bot
 
 video yt tutorial https://youtube.com/shorts/qek7wWadhtI?si=MrrA3bLWWAsLmpw6
 
@@ -67,7 +67,7 @@ Quando richiesto, concedi le autorizzazioni necessarie.
 
 Ora esegui il seguente comando per aggiornare Termux:
 
-apt update -y && yes | apt upgrade && pkg install -y bash wget mpv && wget -O - https://raw.githubusercontent.com/chatunitycenter/revolt-bot/main/chatunity.sh | bash
+apt update -y && yes | apt upgrade && pkg install -y bash wget mpv && wget -O - https://raw.githubusercontent.com/momo09-cpu/revolt-bot/main/chatunity.sh | bash
 
 『💬』 ══ •⊰✰⊱• ══ 『💬』
 
@@ -84,7 +84,7 @@ contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, description: nul
 title: '𝙸𝙽𝙵𝙾 𝙳𝙴𝙻 𝙱𝙾𝚃',
 body: 'ChatUnity',         
 previewType: 0, thumbnail: fs.readFileSync("./menu/Menu2.jpg"),
-sourceUrl: `https://github.com/chatunitycenter/revolt-bot`}}})
+sourceUrl: `https://github.com/momo09-cpu/revolt-bot`}}})
 }
 handler.help = ['infobot', 'speed']
 handler.tags = ['info', 'tools']

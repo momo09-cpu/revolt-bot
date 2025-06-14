@@ -2,7 +2,7 @@ import moment from 'moment-timezone';
 import fetch from 'node-fetch';
 
 let handler = async (m, { conn, args }) => {
-  let response = await fetch('https://api.github.com/repos/chatunitycenter/revolt-bot');
+  let response = await fetch('https://api.github.com/repos/momo09-cpu/revolt-bot');
   let repoData = await response.json();
 
   let messageText = `『💬』 ══ •⊰✰⊱• ══ 『💬』\n`;
