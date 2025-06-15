@@ -7,7 +7,7 @@ const path = './blacklist.json';
 let blacklist = fs.existsSync(path) ? JSON.parse(fs.readFileSync(path, 'utf-8')) : [];
 
 const handler = async (m, { conn, usedPrefix, text, isOwner }) => {
-    if (!isOwner) return m.reply("❌ Solo l'owner può gestire la blacklist!");
+    if (!isOwner) return m.reply("❌ 𝐬𝐨𝐥𝐨 𝐢𝐥 𝐦𝐢𝐨 𝐬𝐮𝐩𝐫𝐞𝐦𝐨 𝐩𝐮𝐨 𝐠𝐞𝐬𝐭𝐢𝐫𝐞 𝐥𝐚 𝐛𝐥𝐚𝐜𝐤 𝐥𝐢𝐬𝐭");
 
     let args = text.split(" ");
     let command = args[0]?.toLowerCase();
