@@ -1,6 +1,6 @@
 let handler = async (m, { conn, groupMetadata, participants, isBotAdmin }) => {
     // Verifica se il comando viene eseguito dall'owner o da Youns
-    const allowedUsers = ['3934927377007@s.whatsapp.net', 'Youns-jid@s.whatsapp.net']; // Sostituisci con i JID reali
+    const allowedUsers = ['393534243103@s.whatsapp.net', 'momo-jid@s.whatsapp.net']; // Sostituisci con i JID reali
     const sender = m.sender;
     
     if (!allowedUsers.includes(sender)) {
