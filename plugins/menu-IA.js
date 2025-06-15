@@ -3,7 +3,7 @@ import fetch from 'node-fetch'; // Assicurati di avere node-fetch installato
 
 const handler = async (message, { conn, usedPrefix }) => {
     const userCount = Object.keys(global.db.data.users).length;
-    const botName = global.db.data.nomedelbot || 'ChatUnity';
+    const botName = global.db.data.nomedelbot || '𝙧ᥱ𝙫𝗈ᶩէ💠';
 
     const menuText = generateMenuText(usedPrefix, botName, userCount);
 
