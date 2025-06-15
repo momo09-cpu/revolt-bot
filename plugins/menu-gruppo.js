@@ -69,24 +69,24 @@ function generateMenuText(prefix, botName, userCount) {
 ┃◈╰━━━━━━━━━━━━┈⊷  
 ┃◈  
 ┃◈╭─✦ *MUSICA & AUDIO* ✦═╗  
-┃◈┃• 🎵 *.play* (canzone)  
+┃◈┃• 🎵 *.play*  
 ┃◈┃• 🎥 *.playlist*   
-┃◈┃• 🎶 *.shazam* (audio)  
-┃◈┃• 🔊 *.tomp3* (video)  
-┃◈┃• 🎤 *.lyrics* (artista-titolo)  
+┃◈┃• 🎶 *.shazam*  
+┃◈┃• 🔊 *.tomp3*  
+┃◈┃• 🎤 *.lyrics*  
 ┃◈╰━━━━━━━━━━━━┈⊷  
 ┃◈  
 ┃◈╭✦ *INFORMAZIONI & UTILITÀ* ✦╗  
-┃◈┃• 🌍 *.meteo* (città)  
-┃◈┃• 🕒 *.orario* (città)  
-┃◈┃• 🌐 *.traduci* (testo)  
-┃◈┃• 📊 *.contaparole* (testo)
-┃◈┃• 🆔 *.id* (gruppo)
+┃◈┃• 🌍 *.meteo* 
+┃◈┃• 🕒 *.orario*  
+┃◈┃• 🌐 *.traduci*
+┃◈┃• 📊 *.contaparole*
+┃◈┃• 🆔 *.id* 
 ┃◈┃• 💻 *.gitclone* (repo)
 ┃◈┃• ℹ️ *.info* [@utente]
 ┃◈┃• 📜 *.regole*
-┃◈┃• 📚 *.wikipedia* (argomento)
-┃◈┃• 🔍 *.checkscam* (check sito)
+┃◈┃• 📚 *.wikipedia* 
+┃◈┃• 🔍 *.checkscam* 
 ┃◈┃• 📜 *.dashboard*  
 ┃◈┃• 🔍 *.phsearch*  
 ┃◈┃• 🔍 *.cercaimmagine* 
@@ -95,14 +95,14 @@ function generateMenuText(prefix, botName, userCount) {
 ┃◈╰━━━━━━━━━━━━┈⊷  
 ┃◈  
 ┃◈╭✦ *IMMAGINI & MODIFICA* ✦╗  
-┃◈┃• 🛠️ *.sticker* (foto a sticker)  
-┃◈┃• 🖼️ *.png* (sticker a foto)  
-┃◈┃• 📷 *.hd* (migliora qualità foto)  
-┃◈┃• 🖼️ *.rimuovisfondo* (foto)  
-┃◈┃• 🔍 *.rivela* (foto nascosta)  
-┃◈┃• 🖼️ *.toimg* (da sticker)  
-┃◈┃• 📖 *.leggi* (foto)  
-┃◈┃• 🌀 *.blur* (sfoca immagine)  
+┃◈┃• 🛠️ *.sticker* 
+┃◈┃• 🖼️ *.png*
+┃◈┃• 📷 *.hd*  
+┃◈┃• 🖼️ *.rimuovisfondo* 
+┃◈┃• 🔍 *.rivela*  
+┃◈┃• 🖼️ *.toimg*  
+┃◈┃• 📖 *.leggi* 
+┃◈┃• 🌀 *.blur*  
 ┃◈┃• 🖼️ *.pinterest* (in arrivo)  
 ┃◈┃• 🎴 *.hornycard* [@utente]  
 ┃◈┃• 🧠 *.stupido/a* @  
@@ -122,39 +122,39 @@ function generateMenuText(prefix, botName, userCount) {
 ┃◈┃• 🎲 *.dado*  
 ┃◈┃• 🎰 *.slot*  
 ┃◈┃• 🃏 *.casinò*  
-┃◈┃• 💰 *.scommessa* (quantità)  
+┃◈┃• 💰 *.scommessa*   
 ┃◈┃• 🔫 *.roulette*  
-┃◈┃• 🪙 *.moneta* (testa o croce)  
-┃◈┃• 🧮 *.mate* (problema mate)  
-┃◈┃• 📈 *.scf* (sasso carta forbici)  
-┃◈┃• 🐾 *.pokedex* (info Pokémon)  
+┃◈┃• 🪙 *.testa o croce
+┃◈┃• 🧮 *.mate* 
+┃◈┃• 📈 *.scf* 
+┃◈┃• 🐾 *.pokedex*
 ┃◈╰━━━━━━━━━━━━┈⊷  
 ┃◈  
 ┃◈╭✦ *ECONOMIA & CLASSIFICHE* ✦╗  
-┃◈┃• 💰 *.portafoglio* (saldo)  
+┃◈┃• 💰 *.portafoglio*
 ┃◈┃• 🏦 *.banca*   
 ┃◈┃• 💸 *.daily*  
-┃◈┃• 🏆 *.classifica* (top utenti)  
-┃◈┃• 💳 *.donauc*   
-┃◈┃• 🛒 *.compra* (acquista UC)  
+┃◈┃• 🏆 *.classifica* 
+┃◈┃• 💳 *.donauc* 
+┃◈┃• 🛒 *.compra*
 ┃◈┃• 🤑 *.ruba* @utente  
-┃◈┃• 📤 *.ritira* (UC dalla banca)  
-┃◈┃• ⛏️ *.mina* (guadagna XP)  
+┃◈┃• 📤 *.ritira*   
+┃◈┃• ⛏️ *.mina*  
 ┃◈┃• 📊 *.xp*  
 ┃◈┃• ♻️ *.donaxp* @utente  
 ┃◈┃• 🎯 *.rubaxp* @utente  
 ┃◈╰━━━━━━━━━━━━┈⊷  
 ┃◈  
 ┃◈╭✦ *INTERAZIONI SOCIALI* ✦╗  
-┃◈┃• 💍 *.sposami* (proposta)  
-┃◈┃• 💔 *.divorzia* (fine relazione)  
-┃◈┃• 💌 *.amore* @utente (affinità)  
+┃◈┃• 💍 *.sposami*  
+┃◈┃• 💔 *.divorzia*  
+┃◈┃• 💌 *.amore* @utente   
 ┃◈┃• 💋 *.bacia* @utente  
 ┃◈┃• 😡 *.odio* @utente  
-┃◈┃• 🗣️ *.rizz* @utente (fascino)  
+┃◈┃• 🗣️ *.rizz* @utente  
 ┃◈┃• 🤫 *.segreto* @utente  
 ┃◈┃• ☠️ *.minaccia* @utente  
-┃◈┃• 🔥 *.zizzania* @utente (crea litigi)  
+┃◈┃• 🔥 *.zizzania* @utente  
 ┃◈┃• 🚫 *.obbligo* (obb o v)  
 ┃◈┃• 💋 *.ditalino* @  
 ┃◈┃• 💋 *.sega* @  
@@ -191,9 +191,9 @@ function generateMenuText(prefix, botName, userCount) {
 ┃◈┃• 👑 *.autoadmin*  
 ┃◈╰━━━━━━━━━━━━┈⊷  
 ┃◈  
-┃◈┃• *𝑽𝑬𝑹𝑺𝑰𝑶𝑵𝑬:* ${vs}  
-┃◈┃• *𝐂𝐎𝐋𝐋𝐀𝐁: 𝐃𝐑𝐆𝐁* 
-┃◈┃• *𝐒𝐔𝐏𝐏𝐎𝐑𝐓𝐎:* (.supporto)  
+┃◈┃• 𝑽𝑬𝑹𝑺𝑰𝑶𝑵𝑬: ${vs}  
+┃◈┃• 𝐂𝐎𝐋𝐋𝐀𝐁: 3𝐓𝐎𝐎𝐂 
+┃◈┃• 𝐒𝐔𝐏𝐏𝐎𝐑𝐓𝐎: momo 
 ┃◈└──────────┈⊷  
 ╰━━━━━━━━━━━━━┈⊷  
 
