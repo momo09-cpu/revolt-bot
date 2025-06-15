@@ -9,7 +9,7 @@ let handler = async (m, { conn }) => {
     '639649477630@s.whatsapp.net', // Sostituisci con numeri reali
     
   ];
-
+ 
   
 
   // Trova l'utente da rimuovere
