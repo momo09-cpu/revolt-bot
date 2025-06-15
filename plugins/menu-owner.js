@@ -80,8 +80,8 @@ function generateMenuText(prefix, botName, userCount) {
 ┃◈┃• ⚙️ *${prefix}resetprefisso*
 ┃◈┃• ⚙️ *${prefix}godmode* {autoadmin}
 ┃◈┃• ⚙️ *${prefix}azzera* @
-┃◈┃• ⚙️ *${prefix}aggiungi* (num. messaggi) @
-┃◈┃• ⚙️ *${prefix}rimuovi* (num. messaggi) @
+┃◈┃• ⚙️ *${prefix}aggiungi* @
+┃◈┃• ⚙️ *${prefix}rimuovi* @
 ┃◈┃• ⚙️ *${prefix}everygroup* (comando)
 ┃◈┃• ⚙️ *${prefix}banchat* (gruppo)
 ┃◈┃• ⚙️ *${prefix}unbanchat* (gruppo)
@@ -90,9 +90,9 @@ function generateMenuText(prefix, botName, userCount) {
 ┃◈┃• ⚙️ *${prefix}aggiornabot*
 ┃◈┃
 ┃◈└───────────┈⊷
-┃◈┃• *𝑽𝑬𝑹𝑺𝑰𝑶𝑵𝑬:* ${vs}
-┃◈┃•  𝐂𝐎𝐋𝐋𝐀𝐁: 𝐃𝐑𝐆𝐁
-┃◈┃• *𝐒𝐔𝐏𝐏𝐎𝐑𝐓𝐎:* (.supporto)
+┃◈┃• 𝑽𝑬𝑹𝑺𝑰𝑶𝑵𝑬: ${vs}
+┃◈┃•  𝐂𝐎𝐋𝐋𝐀𝐁: 3𝐓𝐎𝐎𝐂
+┃◈┃• 𝐒𝐔𝐏𝐏𝐎𝐑𝐓𝐎: momo
 ╰━━━━━━━━━━━━━┈·๏
 `.trim();
 }
