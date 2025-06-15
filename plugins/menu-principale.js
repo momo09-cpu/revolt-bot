@@ -9,7 +9,7 @@ const __dirname = path.dirname(__filename);
 
 const handler = async (message, { conn, usedPrefix, command }) => {
     const userCount = Object.keys(global.db.data.users).length;
-    const botName = global.db.data.nomedelbot || 'ChatUnity';
+    const botName = global.db.data.nomedelbot || '𝙧ᥱ𝙫𝗈ᶩէ💠';
 
     const menuText = generateMenuText(usedPrefix, botName, userCount);
 
@@ -57,8 +57,8 @@ function generateMenuText(prefix, botName, userCount) {
 ┃◈┃
 ┃◈└───────────┈⊷
 ┃◈┃• 𝑽𝑬𝑹𝑺𝑰𝑶𝑵𝑬: ${vs}
-┃◈┃•  𝐂𝐎𝐋𝐋𝐀𝐁: 3𝐎𝐎𝐂
-┃◈┃• 𝐒𝐔𝐏𝐏𝐎𝐑𝐓𝐎: momo
+┃◈┃•  𝐂𝐎𝐋𝐋𝐀𝐁: 3𝐓𝐎𝐎𝐂
+┃◈┃• 𝐒𝐔𝐏𝐏𝐎𝐑𝐓𝐎: @momo
 ╰━━━━━━━━━━━━━┈·๏
 `.trim();
 }
