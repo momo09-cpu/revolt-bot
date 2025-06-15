@@ -91,7 +91,7 @@ handler.before = async (m) => {
         receiverUser.coniuge = fromUser;
         receiverUser.primoMatrimonio = true;
 
-        let testo = `𝐃𝐢𝐜𝐡𝐢𝐚𝐫𝐨 𝐮𝐟𝐟𝐢𝐜𝐢𝐚𝐥𝐦𝐞𝐧𝐭𝐞 𝐬𝐩𝐨𝐬𝐚𝐭𝐢 @${m.sender.split('@')[0]} e  @${fromUser.split('@')[0]} 𝐟𝐢𝐧𝐜𝐡𝐞́ 𝐦𝐨𝐫𝐭𝐞 𝐧𝐨𝐧 𝐯𝐢 𝐬𝐞𝐩𝐚𝐫𝐢`;
+        let testo = `𝐃𝐢𝐜𝐡𝐢𝐚𝐫𝐨 𝐮𝐟𝐟𝐢𝐜𝐢𝐚𝐥𝐦𝐞𝐧𝐭𝐞 𝐬𝐩𝐨𝐬𝐚𝐭𝐢 @${m.sender.split('@')[0]} e  @${fromUser.split('@')[0]} 𝐟𝐢𝐧𝐜𝐡𝐞́ 𝐜𝐨𝐧𝐧𝐞𝐬𝐬𝐢𝐨𝐧𝐞 𝐧𝐨𝐧 𝐯𝐢 𝐬𝐞𝐩𝐚𝐫𝐢`;
         await m.reply(testo, null, { mentions: [m.sender, fromUser] });
 
         delete proposals[fromUser];
