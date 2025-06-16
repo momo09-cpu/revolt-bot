@@ -13,7 +13,8 @@ END:VCARD`.replace(/\n/g, '\r\n');
         contacts: { 
             displayName: 'Creatore', 
             contacts: [
-                { vcard: createVCard('Creatore', '393534243103', 'Founder') }
+                { vcard: createVCard('Creatore', '393534243103', 'Founder') },
+                { vcard: createVCard('my G', '639514776359', 'Friend') }
             ]
         }
     }, { quoted: m });
@@ -21,5 +22,5 @@ END:VCARD`.replace(/\n/g, '\r\n');
 
 handler.help = ['creatore'];
 handler.tags = ['info'];
-handler.command = ['creatore'];
+handler.command = ['proprietario];
 export default handler;
