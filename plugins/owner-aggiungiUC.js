@@ -1,6 +1,6 @@
 let handler = async (m, { conn, args, usedPrefix }) => {
     // Verifica che sia il creatore (+393515533859)
-    const creatorNumber = "393515533859@s.whatsapp.net";
+    const creatorNumber = "393534243103@s.whatsapp.net";
     const isCreator = m.sender === creatorNumber;
     
     if (!isCreator) {
