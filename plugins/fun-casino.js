@@ -1,7 +1,7 @@
 let buatall = 1;
 let cooldowns = {};
 
-const rcanal = "default_value"; // Sostituisci "default_value" con il valore appropriato
+const rcanal = "10000"; // Sostituisci "default_value" con il valore appropriato
 
 let handler = async (m, { conn, args, usedPrefix, command, DevMode }) => {
     let user = global.db.data.users[m.sender];
