@@ -6,21 +6,21 @@ let handler = async (m, { conn, command, text }) => {
   
     // Risposte personalizzate in base alla percentuale! 😜
     if (lovePercent < 30) {
-      loveMessage = "💔 *Pessime notizie...* 💔\n";
+      loveMessage = "💔 𝒑𝒆𝒔𝒔𝒊𝒎𝒆 𝒏𝒐𝒕𝒊𝒛𝒊𝒆...💔\n";
     } else if (lovePercent < 70) {
-      loveMessage = "😳 *C'è speranza... ma non esultare!* 😳\n";
+      loveMessage = "😳 𝒄𝒆 𝒍𝒂 𝒑𝒖𝒐𝒊 𝒇𝒂𝒓𝒆 𝒔𝒆 𝒕𝒊 𝒊𝒎𝒑𝒆𝒈𝒏𝒊!! 😳\n";
     } else {
-      loveMessage = "💘 *WOW! È AMORE VERO!* 💘\n";
+      loveMessage = "💘 𝒘𝒐𝒘 𝒄𝒐𝒎𝒑𝒍𝒊𝒎𝒆𝒏𝒕𝒊 𝒂𝒏𝒅𝒂𝒕𝒆 𝒊𝒏 𝒑𝒓𝒊𝒗𝒂𝒕𝒐💘\n";
     }
   
-    let finalText = `✨ *💌 CALCOLATORE DI AMORE 💌* ✨
+    let finalText = `✨ *💌 𝒄𝒂𝒍𝒄𝒐𝒍𝒂𝒕𝒐𝒓𝒆 𝒅𝒊 𝒂𝒎𝒐𝒓𝒆 💌* ✨
   
   ${loveMessage}
-  *${text}* ti ama al *${lovePercent}%*! ${lovePercent > 80 ? "🔥" : "😅"}
+  *${text}* 𝒕𝒊 𝒂𝒎𝒂 𝒂𝒍 *${lovePercent}%*! ${lovePercent > 80 ? "🔥" : "😅"}
   
   ${lovePercent > 50 
-    ? "💬 *Che aspetti? Scrivile/subito!* 🥰" 
-    : "📉 *Forse è il momento di guardare altrove...* 😂"}`.trim();
+    ? "💬 𝒄𝒉𝒆 𝒂𝒔𝒑𝒆𝒕𝒕𝒊 𝒈𝒂𝒚 𝒔𝒄𝒓𝒊𝒗𝒊𝒍𝒆!* 🥰" 
+    : "📉 𝒇𝒐𝒓𝒔𝒆 𝒆 𝒎𝒆𝒈𝒍𝒊𝒐 𝒄𝒆𝒓𝒄𝒂𝒓𝒏𝒆 𝒖𝒏'𝒂𝒍𝒕𝒓𝒂 😂"}`.trim();
   
     await conn.sendMessage(m.chat, { 
       text: finalText,
