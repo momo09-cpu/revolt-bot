@@ -4,18 +4,18 @@ let handler = async (m, { conn, command, text }) => {
 
     // Determina il messaggio in base al livello
     let finalPhrase = width >= 70 
-        ? "🌿 Attenti che si pippa pure la farina" 
+        ? "🌿 𝒂𝒕𝒕𝒆𝒏𝒕𝒊 𝒄𝒉𝒆 𝒒𝒖𝒆𝒔𝒕𝒐 𝒑𝒊𝒑𝒑𝒂 𝒑𝒖𝒓𝒆 𝒊𝒍 𝒈𝒆𝒔𝒔𝒐" 
         : width >= 30 
-        ? "🌿 Non sa pippare, aumenta le dosi!!" 
-        : "🌿 Un'esempio da seguire, complimenti.";
+        ? "🌿 𝒎𝒂 𝒄𝒉𝒆 𝒇𝒂𝒊 𝒄𝒐𝒔𝒊 𝒑𝒐𝒄𝒐 𝒂𝒖𝒎𝒆𝒏𝒕𝒂 𝒍𝒆 𝒅𝒐𝒔𝒊!!" 
+        : "🌿 𝒖𝒏'𝒆𝒔𝒆𝒎𝒑𝒊𝒐 𝒅𝒂 𝒔𝒆𝒈𝒖𝒊𝒓𝒆, 𝒄𝒐𝒎𝒑𝒍𝒊𝒎𝒆𝒏𝒕𝒊.";
 
     // Creazione del messaggio
     let message = `
 『💬』 ══ •⊰✰⊱• ══ 『💬』
 
-MOMENTO DEL DRUG TEST! 🌿 
+𝒎𝒐𝒎𝒆𝒏𝒕𝒐 𝒅𝒆𝒍 𝒈𝒓𝒖𝒈 𝒕𝒆𝒔𝒕! 🌿 
 ━━━━━━━━━━━━━━
- ${text ? text : 'Tu'} ha un tasso alcolemico del ${width}%! 🌿
+ ${text ? text : 'Tu'} 𝒉𝒂 𝒖𝒏 𝒕𝒂𝒔𝒔𝒐 𝒂𝒍𝒄𝒐𝒍𝒆𝒎𝒊𝒄𝒐 𝒅𝒆𝒍 ${width}%! 🌿
 『💬』 ══ •⊰✰⊱• ══ 『💬』
 
 ${finalPhrase}
@@ -28,7 +28,7 @@ ${finalPhrase}
             forwardedNewsletterMessageInfo: {
                 newsletterJid: '120363259442839354@newsletter',
                 serverMessageId: '',
-                newsletterName: `ChatUnity` // Utilizzo della variabile botName
+                newsletterName: `𝙧ᥱ𝙫𝗈ᶩէ💠` // Utilizzo della variabile botName
             },
         }
     };
