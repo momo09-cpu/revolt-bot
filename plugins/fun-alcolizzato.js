@@ -4,19 +4,19 @@ let handler = async (m, { conn, command, text }) => {
 
     // Determina il messaggio in base al livello
     let finalPhrase = width >= 70 
-        ? "🍾 Amico se hai bisogno di parlare io ci sono.." 
+        ? "🍾 𝑐ℎ𝑒 𝑓𝑟𝑜𝑐𝑖𝑜 𝑐ℎ𝑒 𝑏𝑒𝑣𝑖 𝑐𝑜𝑠𝑖 𝑡𝑎𝑛𝑡𝑜 𝑛𝑖𝑒𝑛𝑡𝑒 𝑝𝑎𝑡𝑒𝑛𝑡𝑒 𝑝𝑒𝑟 3 𝑚𝑒𝑠𝑖." 
         : width >= 30 
-        ? "🥂 Beve in modo responsabile, o quasi..." 
-        : "🚰 Totalmente sobrio, niente sbronze per oggi!";
+        ? "🥂 𝑏𝑒ℎ 𝑛𝑖𝑒𝑛𝑡𝑒 𝑚𝑎𝑙𝑒 𝑛𝑜𝑛 𝑏𝑒𝑟𝑒 𝑡𝑟𝑜𝑝𝑝𝑜 𝑚𝑖𝑟𝑎𝑐𝑐𝑜𝑚𝑎𝑛𝑑𝑜." 
+        : "🚰 𝑐ℎ𝑒 𝑏𝑟𝑎𝑣𝑜 𝑐ℎ𝑒 𝑛𝑜𝑛 𝑏𝑒𝑣𝑖 𝑛𝑒 𝑡𝑎𝑛𝑡𝑜 𝑛𝑒 𝑝𝑜𝑐𝑜 𝑠𝑒𝑖 𝑛𝑒𝑙𝑙𝑎 𝑔𝑖𝑢𝑠𝑡𝑎 𝑠𝑡𝑟𝑎𝑑𝑎"
 
     // Creazione del messaggio
     let message = `
-『💬』 ══ •⊰✰⊱• ══ 『💬』
+『💠』 ══ •⊰✰⊱• ══ 『💠』
 
-MOMENTO DEL TEST DELL'ALCOL! 🍷 
-━━━━━━━━━━━━━━
- ${text ? text : 'Tu'} ha un tasso alcolemico del ${width}%! 🍷
-『💬』 ══ •⊰✰⊱• ══ 『💬』
+𝑚𝑜𝑚𝑒𝑛𝑡𝑜 𝑑𝑒𝑙 𝑡𝑒𝑠𝑡 𝑑𝑒𝑙𝑙'𝑎𝑙𝑐𝑜𝑙!🍷 
+━━━━━━━━━━━━━━━━━━
+ ${text ? text : '𝑡𝑢'} ℎ𝑎 𝑢𝑛 𝑡𝑎𝑠𝑠𝑜 𝑎𝑙𝑐𝑜𝑙𝑖𝑐𝑜 𝑑𝑒𝑙 ${width}%!🍷
+『💠』 ══ •⊰✰⊱• ══ 『💠』
 
 ${finalPhrase}
 `.trim();
