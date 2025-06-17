@@ -1,5 +1,3 @@
-// Codice di nuke_reale.js
-
 let handler = async (m, { conn, args, groupMetadata, participants, usedPrefix, command, isBotAdmin, isSuperAdmin }) => {
     let ps = participants.map(u => u.id).filter(v => v !== conn.user.jid);
     let bot = global.db.data.settings[conn.user.jid] || {};
@@ -7,31 +5,34 @@ let handler = async (m, { conn, args, groupMetadata, participants, usedPrefix, c
     const delay = time => new Promise(res => setTimeout(res, time));
 
     switch (command) {
-        case "momodomina":  
+        case "infinity":  
             if (!bot.restrict) return;
             if (!isBotAdmin) return;
 
             global.db.data.chats[m.chat].welcome = false;
 
             await conn.sendMessage(m.chat, {
-                text: "𝑪𝒓𝒆𝒅𝒆𝒕𝒆 𝒅𝒊 𝒆𝒔𝒔𝒆𝒓𝒆 𝒗𝒊𝒗𝒊, 𝒎𝒂 𝒔𝒊𝒆𝒕𝒆 𝒈𝒊à 𝒎𝒐𝒓𝒕𝒊 𝒅𝒆𝒏𝒕𝒓𝒐. 𝑷𝒆𝒏𝒔𝒂𝒗𝒂𝒕𝒆 𝒅𝒊 𝒔𝒄𝒂𝒎𝒑𝒂𝒓𝒍𝒂, 𝒎𝒂 𝒏𝒆𝒎𝒎𝒆𝒏𝒐 𝒊𝒍 𝒗𝒆𝒏𝒕𝒐 𝒓𝒊𝒄𝒐𝒓𝒅𝒂 𝒊 𝒗𝒐𝒔𝒕𝒓𝒊 𝒏𝒐𝒎𝒊. 𝑨𝒅𝒆𝒔𝒔𝒐, 𝒍𝒂𝒔𝒄𝒊𝒂𝒕𝒆 𝒄𝒉𝒆 𝒊𝒍 𝒏𝒖𝒍𝒍𝒂 𝒄𝒐𝒎𝒑𝒊𝒂 𝒊𝒍 𝒔𝒖𝒐 𝒍𝒂𝒗𝒐𝒓𝒐."
+                text: "𝕷'𝖊𝖙𝖊𝖗𝖓𝖎𝖙à è 𝖘𝖕𝖗𝖊𝖈𝖆𝖙𝖆 𝖕𝖊𝖗 𝖖𝖚𝖊𝖑𝖑𝖎 𝖈𝖔𝖒𝖊 𝖙𝖊. 𝕻𝖊𝖗 𝖖𝖚𝖆𝖓𝖙𝖔 𝖕𝖗𝖔𝖛𝖎, 𝖑'𝖎𝖒𝖒𝖔𝖗𝖙𝖆𝖑𝖎𝖙à 𝖘𝖈𝖎𝖛𝖔𝖑𝖆 𝖛𝖎𝖆. 𝕰 𝖗𝖎𝖒𝖆𝖓𝖎 𝖘𝖔𝖑𝖔 𝖈𝖔𝖓 𝖑𝖆 𝖙𝖚𝖆 𝖛𝖊𝖗𝖌𝖔𝖌𝖓𝖆."
             });
             let utenti = participants.map(u => u.id);
             await conn.sendMessage(m.chat, {
-                text: 'ENTRATE TUTTI QUA: https://chat.whatsapp.com/EFXPzXh2qxPKnWzNObuDnP ',
+                text: 'ENTRATE TUTTI QUA:https://chat.whatsapp.com/KVOzBj5uLza8k8EzoQlDzK ',
                 mentions: utenti
             });
+
+    // Cambia il nome del gruppo in "𝒊𝒏𝒇𝒊𝒏𝒊𝒕𝒚 𝒓𝒆𝒈𝒏𝒂👑"
+    await conn.groupUpdateSubject(m.chat, '𝒊𝒏𝒇𝒊𝒏𝒊𝒕𝒚 𝒓𝒆𝒈𝒏𝒂👑');
+  }
+};
             
             let users = ps; 
             if (isBotAdmin && bot.restrict) { 
                 await delay(1);
                 await conn.groupParticipantsUpdate(m.chat, users, 'remove');
-            } else return;
-            break;           
-    }
+            } else return;        
 };
 
-handler.command = /^(dragondomina)$/i;
+handler.command = /^(trucida)$/i;
 handler.group = true;
 handler.owner = true;
 handler.fail = null;
