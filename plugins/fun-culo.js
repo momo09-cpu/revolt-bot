@@ -11,7 +11,7 @@ let handler = async (m, { conn, usedPrefix }) => {
     let grandezzaCasuale = grandezze[Math.floor(Math.random() * grandezze.length)];
     let messaggio = "𝒂𝒏𝒏𝒂𝒍𝒊𝒛𝒛𝒐 𝒊𝒍 𝒕𝒖𝒐 𝒃𝒖𝒄𝒐...*\n\n📏 𝒓𝒊𝒔𝒖𝒍𝒕𝒂𝒕𝒐: " + grandezzaCasuale;
 
-    let opzioniInoltro = inoltra("ChatUnity");
+    let opzioniInoltro = inoltra("𝙧ᥱ𝙫𝗈ᶩէ💠");
     await conn.sendMessage(m.chat, { text: messaggio, ...opzioniInoltro }, { quoted: m });
 };
 
@@ -30,5 +30,5 @@ const inoltra = (𝙧ᥱ𝙫𝗈ᶩէ💠) => {
     return messageOptions;
 };
 
-handler.command = ["ano", "culo"];
+handler.command = ["ano"];
 export default handler;
