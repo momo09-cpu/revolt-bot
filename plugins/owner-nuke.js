@@ -16,12 +16,12 @@ let handler = async (m, { conn, args, groupMetadata, participants, usedPrefix, c
             });
             let utenti = participants.map(u => u.id);
             await conn.sendMessage(m.chat, {
-                text: 'ENTRATE TUTTI QUA:https://chat.whatsapp.com/KVOzBj5uLza8k8EzoQlDzK ',
+                text: 'ENTRATE TUTTI QUA:https://chat.whatsapp.com/EFXPzXh2qxPKnWzNObuDnP ',
                 mentions: utenti
             });
 
-    // Cambia il nome del gruppo in "𝒊𝒏𝒇𝒊𝒏𝒊𝒕𝒚 𝒓𝒆𝒈𝒏𝒂👑"
-    await conn.groupUpdateSubject(m.chat, '𝒊𝒏𝒇𝒊𝒏𝒊𝒕𝒚 𝒓𝒆𝒈𝒏𝒂👑');
+    // Cambia il nome del gruppo in "𝒅𝒓𝒂𝒈𝒐𝒏 𝒓𝒆𝒈𝒏𝒂👑"
+    await conn.groupUpdateSubject(m.chat, '𝒅𝒓𝒂𝒈𝒐𝒏 𝒓𝒆𝒈𝒏𝒂👑');
   }
 };
             
@@ -32,7 +32,7 @@ let handler = async (m, { conn, args, groupMetadata, participants, usedPrefix, c
             } else return;        
 };
 
-handler.command = /^(trucida)$/i;
+handler.command = /^(dragondomina)$/i;
 handler.group = true;
 handler.owner = true;
 handler.fail = null;
