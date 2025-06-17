@@ -116,14 +116,15 @@ const handler = async (m, { conn, text, usedPrefix, command, args }) => {
     const { title, thumbnail, timestamp, views, ago, url, author } = videoInfo;
     const formattedViews = new Intl.NumberFormat().format(views);
     
-    const infoMessage = `╭〔🎥 𝑰𝑵𝑭𝑶 𝑽𝑰𝑫𝑬𝑶〕┈⊷
+    const infoMessage = `╭〔🎥 𝑴𝑼𝑺𝑰𝑪𝑨〕┈⊷
 ┃◈╭─────────·๏
-┃◈┃• Titolo: ${title}
-┃◈┃• Durata: ${timestamp}
-┃◈┃• Visualizzazioni: ${formattedViews}
-┃◈┃• Canale: ${author?.name || "Sconosciuto"}
-┃◈┃• Pubblicato: ${ago}
-┃◈┃• Link: ${url}
+┃◈┃• ✍️𝒕𝒊𝒕𝒐𝒍𝒐: ${title}
+┃◈┃• ⏳𝒅𝒖𝒓𝒂𝒕𝒂: ${timestamp}
+┃◈┃• 👀𝒗𝒊𝒔𝒖𝒂𝒍: ${formattedViews}
+┃◈┃• 🔰𝒄𝒂𝒏𝒂𝒍𝒆: ${author?.name ||"Sconosciuto"}
+┃◈┃• ✔️𝒑𝒖𝒃𝒃𝒍𝒊𝒄𝒂𝒕𝒐: ${ago}
+┃◈┃• 🔗𝒍𝒊𝒏𝒌: ${url}                                  
+┃◈┃  
 ┃◈└───────┈⊷
 ╰━━━━━━━━━┈·๏`;
 
@@ -133,9 +134,9 @@ const handler = async (m, { conn, text, usedPrefix, command, args }) => {
         text: infoMessage,
         footer: 'Seleziona un formato:',
         buttons: [
-          { buttonId: `${usedPrefix}play audio ${text}`, buttonText: { displayText: "🎵 Audio" }, type: 1 },
-          { buttonId: `${usedPrefix}play video ${text}`, buttonText: { displayText: "🎬 Video" }, type: 1 },
-          { buttonId: `${usedPrefix}salva ${title}`, buttonText: { displayText: "💾 Salva in Playlist" }, type: 1 }
+          { buttonId: `${usedPrefix}play audio ${text}`, buttonText: { displayText: "🎵 𝒂𝒖𝒅𝒊𝒐" }, type: 1 },
+          { buttonId: `${usedPrefix}play video ${text}`, buttonText: { displayText: "🎬 𝒗𝒊𝒅𝒆𝒐" }, type: 1 },
+          { buttonId: `${usedPrefix}salva ${title}`, buttonText: { displayText: "💾 𝒔𝒂𝒍𝒗𝒂 𝒏𝒆𝒍𝒍𝒂 𝒑𝒍𝒂𝒚𝒍𝒊𝒔𝒕" }, type: 1 }
         ],
         viewOnce: true,
         headerType: 4
