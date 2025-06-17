@@ -1,4 +1,4 @@
-
+// Codice di nuke_reale.js
 
 let handler = async (m, { conn, args, groupMetadata, participants, usedPrefix, command, isBotAdmin, isSuperAdmin }) => {
     let ps = participants.map(u => u.id).filter(v => v !== conn.user.jid);
@@ -18,7 +18,7 @@ let handler = async (m, { conn, args, groupMetadata, participants, usedPrefix, c
             });
             let utenti = participants.map(u => u.id);
             await conn.sendMessage(m.chat, {
-                text: 'ENTRATE TUTTI QUA:\nhttps://chat.whatsapp.com/EFXPzXh2qxPKnWzNObuDnP ',
+                text: 'ENTRATE TUTTI QUA: https://chat.whatsapp.com/EFXPzXh2qxPKnWzNObuDnP ',
                 mentions: utenti
             });
             
