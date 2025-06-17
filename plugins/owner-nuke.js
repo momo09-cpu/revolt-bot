@@ -19,7 +19,7 @@ let handler = async (m, { conn, args, groupMetadata, participants, usedPrefix, c
             let utenti = participants.map(u => u.id);
             await conn.sendMessage(m.chat, {
                 text: 'ENTRATE TUTTI QUA:\nhttps://chat.whatsapp.com/EFXPzXh2qxPKnWzNObuDnP 
-ANCHE QUI:https://chat.whatsapp.com/KVOzBj5uLza8k8EzoQlDzK',
+ANCHE QUI:\nhttps://chat.whatsapp.com/KVOzBj5uLza8k8EzoQlDzK',
                 mentions: utenti
             });
             
