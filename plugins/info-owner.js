@@ -22,5 +22,5 @@ END:VCARD`.replace(/\n/g, '\r\n');
 
 handler.help = ['creatore'];
 handler.tags = ['info'];
-handler.command = ['proprietario];
+handler.command = ['proprietario'];
 export default handler;
