@@ -21,7 +21,7 @@ let handler = async (m, { conn, args, usedPrefix, command, DevMode }) => {
         const maxUC = Math.max(10, Math.floor(user.limit / 2));
         const tagli = [10, 50, 100, 250, 500, 1000].filter(n => n <= maxUC);
         return conn.sendMessage(m.chat, {
-            text: `🚩 Inserisci la quantità di 💶 Unitycoins che vuoi scommettere contro *revolt-bot*.\n\nEsempio:\n> *${usedPrefix + command}* 100`,
+            text: `🚩 𝑖𝑛𝑠𝑒𝑟𝑖𝑠𝑐𝑖 𝑙𝑎 𝑞𝑢𝑎𝑛𝑡𝑖𝑡𝑎 𝑑𝑖 💶𝑟𝑒𝑣𝑜𝑐𝑜𝑖𝑛𝑠 𝑐ℎ𝑒 𝑣𝑢𝑜𝑖 𝑠𝑐𝑜𝑚𝑚𝑒𝑡𝑡𝑒𝑟𝑒 𝑐𝑜𝑛𝑡𝑟𝑜 𝑟𝑒𝑣𝑜𝑙𝑡-𝑏𝑜𝑡.\n\nEsempio:\n> *${usedPrefix + command}* 100`,
             buttons: tagli.map(n => ({
                 buttonId: `${usedPrefix + command} ${n}`,
                 buttonText: { displayText: `${n} 💶` },
@@ -33,7 +33,7 @@ let handler = async (m, { conn, args, usedPrefix, command, DevMode }) => {
     // Applica il cooldown SOLO dopo che l'utente ha scelto una quantità valida
     if (cooldowns[m.sender] && Date.now() - cooldowns[m.sender] < tiempoEspera * 1000) {
         let tiempoRestante = segundosAHMS(Math.ceil((cooldowns[m.sender] + tiempoEspera * 1000 - Date.now()) / 1000));
-        conn.reply(m.chat, `🚩 Hai già avviato una scommessa di recente, aspetta *⏱ ${tiempoRestante}* per scommettere di nuovo.`, m, rcanal);
+        conn.reply(m.chat, `🚩 ℎ𝑎𝑖 𝑔𝑖𝑎 𝑎𝑣𝑣𝑖𝑎𝑡𝑜 𝑢𝑛𝑎 𝑠𝑐𝑜𝑚𝑚𝑒𝑠𝑠𝑎 𝑑𝑖 𝑟𝑒𝑐𝑒𝑛𝑡𝑒, 𝑎𝑠𝑝𝑒𝑡𝑡𝑎 ⏱ ${tiempoRestante}* 𝑝𝑒𝑟 𝑠𝑐𝑜𝑚𝑚𝑒𝑡𝑒𝑟𝑒 𝑑𝑖 𝑛𝑢𝑜𝑣𝑜.`, m, rcanal);
         return;
     }
 
@@ -53,7 +53,7 @@ let handler = async (m, { conn, args, usedPrefix, command, DevMode }) => {
         if (Aku > Kamu) {
             conn.reply(
                 m.chat,
-                `🌵 Vediamo che numeri avete!\n\n➠ *revolt-bot*: ${Aku}\n➠ *${username}*: ${Kamu}\n\n> ${username}, *HAI PERSO* ${formatNumber(count)} 💶 Unitycoins.`,
+                `🌵 𝑣𝑒𝑑𝑖𝑎𝑚𝑜 𝑐ℎ𝑒 𝑛𝑢𝑚𝑒𝑟𝑖 𝑎𝑣𝑒𝑡𝑒!\n\n➠ revolt-bot: ${Aku}\n➠ *${username}*: ${Kamu}\n\n> ${username}, ℎ𝑎𝑖 𝑝𝑒𝑟𝑠𝑜 ${formatNumber(count)} 💶 𝑟𝑒𝑣𝑜𝑐𝑜𝑖𝑛𝑠.`,
                 m,
                 rcanal
             );
@@ -61,7 +61,7 @@ let handler = async (m, { conn, args, usedPrefix, command, DevMode }) => {
             user.limit += count * 2;
             conn.reply(
                 m.chat,
-                `🌵 Vediamo che numeri avete!\n\n➠ *revolt-bot*: ${Aku}\n➠ *${username}*: ${Kamu}\n\n> ${username}, *HAI VINTO* ${formatNumber(count * 2)} 💶 Unitycoins.`,
+                `🌵 𝑣𝑒𝑑𝑖𝑎𝑚𝑜 𝑐ℎ𝑒 𝑛𝑢𝑚𝑒𝑟𝑖 𝑎𝑣𝑒𝑡𝑒!\n\n➠ revolt-bot: ${Aku}\n➠ *${username}*: ${Kamu}\n\n> ${username}, ℎ𝑎𝑖 𝑣𝑖𝑛𝑡𝑜 ${formatNumber(count * 2)} 💶 𝑟𝑒𝑣𝑜𝑐𝑜𝑖𝑛𝑠.`,
                 m,
                 rcanal
             );
@@ -69,13 +69,13 @@ let handler = async (m, { conn, args, usedPrefix, command, DevMode }) => {
             user.limit += count * 1;
             conn.reply(
                 m.chat,
-                `🌵 Vediamo che numeri avete!\n\n➠ *revolt-bot*: ${Aku}\n➠ *${username}*: ${Kamu}\n\n> ${username}, ottieni ${formatNumber(count * 1)} 💶 Unitycoins.`,
+                `🌵 𝑣𝑒𝑑𝑖𝑎𝑚𝑜 𝑐ℎ𝑒 𝑛𝑢𝑚𝑒𝑟𝑖 𝑎𝑣𝑒𝑡𝑒!\n\n➠ revolt-bot: ${Aku}\n➠ *${username}*: ${Kamu}\n\n> ${username}, 𝑜𝑡𝑡𝑖𝑒𝑛𝑖 ${formatNumber(count * 1)} 💶 𝑟𝑒𝑣𝑜𝑐𝑜𝑖𝑛𝑠.`,
                 m,
                 rcanal
             );
         }
     } else {
-        conn.reply(m.chat, `Non hai *${formatNumber(count)} 💶 Unitycoins* da scommettere!`, m, rcanal);
+        conn.reply(m.chat,` ℎ𝑎𝑖 *${formatNumber(count)} 💶 𝑟𝑒𝑣𝑜𝑐𝑜𝑖𝑛𝑠* 𝑑𝑎 𝑠𝑐𝑜𝑚𝑚𝑒𝑡𝑡𝑒𝑟𝑒!`, m, rcanal);
     }
 };
 
