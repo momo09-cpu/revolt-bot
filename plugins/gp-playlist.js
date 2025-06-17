@@ -5,11 +5,10 @@ import path from 'path';
 // ==================== 🎨 DESIGN & EMOJIS ====================
 const BOT_THEME = {
   FRAME: {
-    TOP: '╭〔*🎵 PLAYLIST MANAGER*〕┈⊷',
+    TOP: '╭〔*🎵 𝑙𝑎 𝑡𝑢𝑎 𝑝𝑙𝑎𝑦𝑙𝑖𝑠𝑡*〕┈⊷',
     MIDDLE: '┃◈╭─────────·๏',
     LINE: '┃◈┃•',
-    BOTTOM: '┃◈└───────┈⊷\n╰━━━━━━━━━┈·๏',
-    SIGNATURE: '꙰ 𝗖𝗿𝗲𝗮𝘇𝗶𝗼𝗻𝗲 𝗚𝗮𝗯𝟯𝟯𝟯 ꙰'
+    BOTTOM: '┃◈└───────┈⊷\n╰━━━━━━━━━┈·๏', '
   },
   EMOJIS: {
     ERROR: '⚠️',
