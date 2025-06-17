@@ -2,7 +2,7 @@
 
 const handler = async (m, { conn }) => {
   const user = global.db.data.users;
-  let txt = `𝐋𝐈𝐒𝐓𝐀 𝐃𝐄𝐈 𝐆𝐑𝐔𝐏𝐏𝐈 𝐃𝐈 ${nomebot}`;
+  let txt = `𝐋𝐈𝐒𝐓𝐀 𝐃𝐄𝐈 𝐆𝐑𝐔𝐏𝐏𝐈 𝐃𝐈 —͟͞͞★ 𝙧ᥱ𝙫𝗈ᶩէ ★Ᏼo͢Ꭲ`;
   const fkontak = { 
     "key": { 
       "participants": "0@s.whatsapp.net", 
