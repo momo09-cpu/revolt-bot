@@ -39,7 +39,7 @@ let handler = async (message, { conn, text }) => {
     let startTime = performance.now();
     let endTime = performance.now();
     let elapsedTime = "" + (endTime - startTime);
-    let resultMessage = `✨ *${text}* è venuta🥵! Sta spruzzando come una cozza dopo *${elapsedTime}ms*!`;
+    let resultMessage = `✨ ${text} 𝑶𝑯𝑯 𝒆 𝒗𝒆𝒏𝒖𝒕𝒂🥵! 𝒔𝒕𝒂 𝒔𝒑𝒓𝒖𝒛𝒛𝒂𝒏𝒅𝒐 𝒄𝒐𝒎𝒆 𝒎𝒂𝒓𝒕𝒊𝒏𝒂 𝒔𝒎𝒆𝒓𝒂𝒍𝒅𝒊 ${elapsedTime}ms!`;
 
     conn.reply(message.chat, resultMessage, message, messageOptions);
 };
