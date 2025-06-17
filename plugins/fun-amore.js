@@ -1,5 +1,5 @@
 let handler = async (m, { conn, command, text }) => {
-    if (!text) return conn.reply(m.chat, "🚨 *Manca il nome della tua crush!* 🚨\nScrivi così: `.crush @nome` o `.crush Mario`", m);
+    if (!text) return conn.reply(m.chat, "🚨 𝒎𝒂𝒏𝒄𝒂 𝒊𝒍 𝒏𝒐𝒎𝒆 𝒅𝒆𝒍𝒍𝒂 𝒕𝒖𝒂 𝒄𝒓𝒖𝒔𝒉!* 🚨\n𝒔𝒄𝒓𝒊𝒗𝒊 𝒄𝒐𝒔𝒊: `.crush @nome` o `.crush Mario`", m);
   
     let lovePercent = Math.floor(Math.random() * 100);
     let loveMessage = "";
