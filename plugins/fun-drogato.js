@@ -15,7 +15,7 @@ let handler = async (m, { conn, command, text }) => {
 
 𝒎𝒐𝒎𝒆𝒏𝒕𝒐 𝒅𝒆𝒍 𝒈𝒓𝒖𝒈 𝒕𝒆𝒔𝒕! 🌿 
 ━━━━━━━━━━━━━━
- ${text ? text : 'Tu'} 𝒉𝒂 𝒖𝒏 𝒕𝒂𝒔𝒔𝒐 𝒂𝒍𝒄𝒐𝒍𝒆𝒎𝒊𝒄𝒐 𝒅𝒆𝒍 ${width}%! 🌿
+ ${text ? text : 'Tu'} "𝒉𝒂 𝒖𝒏 𝒕𝒂𝒔𝒔𝒐 𝒂𝒍𝒄𝒐𝒍𝒆𝒎𝒊𝒄𝒐 𝒅𝒆𝒍" ${width}%! 🌿
 『💬』 ══ •⊰✰⊱• ══ 『💬』
 
 ${finalPhrase}
