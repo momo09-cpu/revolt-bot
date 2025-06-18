@@ -66,10 +66,7 @@ handler.before = async function (m, {conn, isAdmin, isBotAdmin, isOwner, isROwne
 
         
 
-        if (m.sender.startsWith('44')) {
-            let responseb = await conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
-            if (responseb[0].status === "404") return
-        }
+        
 
         if (m.sender.startsWith('33')) {
             let responseb = await conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
@@ -81,11 +78,7 @@ handler.before = async function (m, {conn, isAdmin, isBotAdmin, isOwner, isROwne
             if (responseb[0].status === "404") return
         }
 
-        if (m.sender.startsWith('27')) {
-            let responseb = await conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
-            if (responseb[0].status === "404") return
-        }
-
+        
         if (m.sender.startsWith('389')) {
             let responseb = await conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
             if (responseb[0].status === "404") return
