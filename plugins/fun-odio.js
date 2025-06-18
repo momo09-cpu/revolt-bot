@@ -1,8 +1,8 @@
 let handler = async (m, { conn, command, text }) => {
-    let nomeDelBot = global.db.data.nomedelbot || `𝐂𝐡𝐚𝐭𝐔𝐧𝐢𝐭𝐲`
+    let nomeDelBot = global.db.data.nomedelbot || `𝙧ᥱ𝙫𝗈ᶩէ💠`
   
     let love = `──────────────\n𝐂𝐀𝐋𝐂𝐎𝐋𝐀𝐓𝐎𝐑𝐄 𝐃𝐈 𝐎𝐃𝐈𝐎 😡
-  L'odio tra ${text} e te: ${Math.floor(Math.random() * 100)}%\n──────────────`.trim()
+  𝒍'𝒐𝒅𝒊𝒐 𝒕𝒓𝒂 ${text} 𝒆 𝒕𝒆: ${Math.floor(Math.random() * 100)}%\n──────────────`.trim()
   
     await conn.sendMessage(m.chat, {
       text: love,
@@ -13,7 +13,7 @@ let handler = async (m, { conn, command, text }) => {
         forwardedNewsletterMessageInfo: {
           newsletterJid: '120363259442839354@newsletter',
           serverMessageId: '',
-          newsletterName: `${nomeDelBot}`
+          newsletterName: `${𝙧ᥱ𝙫𝗈ᶩէ💠}`
         }
       }
     })
