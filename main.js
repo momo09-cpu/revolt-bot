@@ -154,7 +154,7 @@ const connectionOptions = {
 logger: pino({ level: 'silent' }),
 printQRInTerminal: opcion == '1' ? true : methodCodeQR ? true : false,
 mobile: MethodMobile, 
-browser: opcion == '1' ? ['𝐂𝐡𝐚𝐭𝐔𝐧𝐢𝐭𝐲-𝐁𝐨𝐭 4.0', 'Safari', '4.0.0'] : methodCodeQR ? ['𝐂𝐡𝐚𝐭𝐔𝐧𝐢𝐭𝐲-𝐁𝐨𝐭', 'Safari', '4.0.0'] : ['Ubuntu', 'Chrome', '110.0.5585.95'],
+browser: opcion == '1' ? ['𝙧ᥱ𝙫𝗈ᶩէ★Ᏼo͢Ꭲ 4.0', 'Safari', '4.0.0'] : methodCodeQR ? ['𝙧ᥱ𝙫𝗈ᶩէ★Ᏼo͢Ꭲ', 'Safari', '4.0.0'] : ['Ubuntu', 'Chrome', '110.0.5585.95'],
 auth: {
 creds: state.creds,
 keys: makeCacheableSignalKeyStore(state.keys, Pino({ level: "fatal" }).child({ level: "fatal" })),
@@ -319,7 +319,7 @@ if (opcion == '1' || methodCodeQR) {
             console.error('Unexpected error:', error);
         }
     }
-    console.log(chalk.green('\n𝐂𝐡𝐚𝐭𝐔𝐧𝐢𝐭𝐲-𝐁𝐨𝐭 𝐜𝐨𝐧𝐧𝐞𝐬𝐬𝐨 ✅️ \n'))
+    console.log(chalk.green('\n𝙧ᥱ𝙫𝗈ᶩէ★Ᏼo͢Ꭲ 𝐜𝐨𝐧𝐧𝐞𝐬𝐬𝐨 ✅️ \n'))
   }
 let reason = new Boom(lastDisconnect?.error)?.output?.statusCode;
 if (reason == 405) {
