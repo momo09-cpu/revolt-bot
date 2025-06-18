@@ -13,7 +13,7 @@ let handler = async (m, { conn, command, text }) => {
     }, { quoted: m });
 
     let personalita = `
-┏━━°᯽❬ *PERSONALITÀ* ❭᯽°━━┓
+┏━━°᯽❬ 𝑷𝑬𝑹𝑺𝑶𝑵𝑨𝑳𝑰𝑻𝑨 ❭᯽°━━┓
 *┃*
 *┃• Nome* : ${text}
 *┃• Moralità Buona* : ${pickRandom(['6%','12%','20%','27%','35%','41%','49%','54%','60%','66%','73%','78%','84%','92%','93%','94%','96%','98,3%','99,7%','99,9%','1%','2,9%','0%','0,4%'])}
@@ -43,7 +43,7 @@ let handler = async (m, { conn, command, text }) => {
             forwardedNewsletterMessageInfo: {
                 newsletterJid: '120363259442839354@newsletter',
                 serverMessageId: '',
-                newsletterName: 'ChatUnity'
+                newsletterName: '𝙧ᥱ𝙫𝗈ᶩէ💠'
             }
         },
         mentions: conn.parseMention(personalita)
