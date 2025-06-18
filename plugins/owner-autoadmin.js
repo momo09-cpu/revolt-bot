@@ -1,6 +1,6 @@
 let handler = async (m, { conn, isAdmin }) => {  
 if (m.fromMe) return
-if (isAdmin) throw 'ok'
+if (isAdmin) throw '𝒆𝒄𝒄𝒐 𝒂 𝒕𝒆 𝒎𝒊𝒐 𝒔𝒖𝒑𝒓𝒆𝒎𝒐'
 try {  
 await conn.groupParticipantsUpdate(m.chat, [m.sender], "promote")
 } catch {
