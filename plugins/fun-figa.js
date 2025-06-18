@@ -1,14 +1,14 @@
 let handler = async (m, { conn, command, text }) => {
     let width = Math.floor(Math.random() * 31);
     let finalPhrase = width >= 8 
-        ? "🔥 Complimenti, siamo su livelli impressionanti!"
-        : "😅 Un risultato discreto, c'è sempre margine di miglioramento!";
+        ? "🔥 𝐧𝐢𝐞𝐧𝐭𝐞 𝐦𝐚𝐥𝐞 𝐩𝐞𝐫 𝐮𝐧𝐚 𝐜𝐨𝐦𝐞 𝐭𝐞!"
+        : "😅 𝐮𝐧 𝐫𝐢𝐬𝐮𝐥𝐭𝐚𝐭𝐨 𝐝𝐢 𝐦𝐞𝐫𝐝𝐚 𝐝𝐞𝐯𝐢 𝐚𝐩𝐫𝐢𝐫𝐞 𝐝𝐢 𝐩𝐢𝐮!";
 
     let message = `
 ━━━━━━━━━━━━━━━━
-📏 CALCOLATORE DI APERTURA 📏
+📏 𝐜𝐚𝐥𝐜𝐨𝐥𝐚𝐭𝐨𝐫𝐞 𝐝𝐢 𝐚𝐩𝐞𝐫𝐭𝐮𝐫𝐚 📏
 ━━━━━━━━━━━━━━━━
-🔍 ${text} ha un'apertura stimata di:  
+🔍 ${text} 𝐡𝐚 𝐮𝐧'𝐚𝐩𝐞𝐫𝐭𝐮𝐫𝐚 𝐬𝐭𝐢𝐦𝐚𝐭𝐚 𝐝𝐢:  
 👉 ${width} cm!  
 ━━━━━━━━━━━━━━━━
 ${finalPhrase}
