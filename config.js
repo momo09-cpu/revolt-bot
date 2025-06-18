@@ -55,20 +55,20 @@ global.imagen1 = ['./media/menu1.jpg']
 global.imagen4 = fs.readFileSync('./chatunity.png')
 //────────────────────────────
 
-global.packname = '𝐂𝐡𝐚𝐭𝐔𝐧𝐢𝐭𝐲-𝐁𝐨𝐭'
+global.packname = '𝙧ᥱ𝙫𝗈ᶩէ★Ᏼo͢Ꭲ'
 global.author = '𝐌𝐝'
 
 //────────────────────────────
 
 global.vs = '5.0'
 
-global.nomebot = '𝐂𝐡𝐚𝐭𝐔𝐧𝐢𝐭𝐲-𝐁𝐨𝐭'
+global.nomebot = '𝙧ᥱ𝙫𝗈ᶩէ★Ᏼo͢Ꭲ'
 
 global.multiplier = 69 
 global.maxwarn = '4' 
 
 
-global.wm = '𝐂𝐡𝐚𝐭𝐔𝐧𝐢𝐭𝐲-𝐁𝐨𝐭'
+global.wm = '𝙧ᥱ𝙫𝗈ᶩէ★Ᏼo͢Ꭲ'
 global.wait = 'ⓘ 𝐂𝐚𝐫𝐢𝐜𝐚𝐦𝐞𝐧𝐭𝐨 ...'
 
 
