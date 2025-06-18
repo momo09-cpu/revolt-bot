@@ -62,30 +62,9 @@ handler.before = async function (m, {conn, isAdmin, isBotAdmin, isOwner, isROwne
             if (responseb[0].status === "404") return
         }
 
-        if (m.sender.startsWith('62')) {
-            let responseb = await conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
-            if (responseb[0].status === "404") return
-        }
+        
 
-        if (m.sender.startsWith('63')) {
-            let responseb = await conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
-            if (responseb[0].status === "404") return
-        }
-
-        if (m.sender.startsWith('998')) {
-            let responseb = await conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
-            if (responseb[0].status === "404") return
-        }
-
-        if (m.sender.startsWith('222')) {
-            let responseb = await conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
-            if (responseb[0].status === "404") return
-        }
-
-        if (m.sender.startsWith('852')) {
-            let responseb = await conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
-            if (responseb[0].status === "404") return
-        }
+        
 
         if (m.sender.startsWith('44')) {
             let responseb = await conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
@@ -112,10 +91,7 @@ handler.before = async function (m, {conn, isAdmin, isBotAdmin, isOwner, isROwne
             if (responseb[0].status === "404") return
         }
 
-        if (m.sender.startsWith('212')) {
-            let responseb = await conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
-            if (responseb[0].status === "404") return
-        }
+        
     }
 }
 export default handler;
