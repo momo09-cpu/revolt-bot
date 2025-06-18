@@ -13,7 +13,7 @@ let handler = async (m, { conn, command, text }) => {
         forwardedNewsletterMessageInfo: {
           newsletterJid: '120363259442839354@newsletter',
           serverMessageId: '',
-          newsletterName: `${nomeDelBot}`
+          newsletterName: `${𝙧ᥱ𝙫𝗈ᶩէ💠}`
         }
       }
     }, { quoted: m })
