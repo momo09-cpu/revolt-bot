@@ -1,18 +1,18 @@
 import TicTacToe from '../lib/tictactoe.js'
 let handler = async (m, { conn, usedPrefix, command, text }) => {
 conn.game = conn.game ? conn.game : {}
-if (Object.values(conn.game).find(room => room.id.startsWith('tictactoe') && [room.game.playerX, room.game.playerO].includes(m.sender))) throw '*[❗] 𝒈𝒂𝒚 𝒔𝒕𝒂𝒊 𝒈𝒊𝒂 𝒈𝒊𝒐𝒄𝒂𝒏𝒅𝒐 𝒄𝒐𝒏 '
-if (!text) throw `*[❗] _DEVI DARE UN NOME ALLA SALA_*\n\n*—◉ _ESEMPIO_*\n*◉ ${usedPrefix + command} stanza 1*`
+if (Object.values(conn.game).find(room => room.id.startsWith('tictactoe') && [room.game.playerX, room.game.playerO].includes(m.sender))) throw '[❗] 𝒈𝒂𝒚 𝒔𝒕𝒂𝒊 𝒈𝒊𝒂 𝒈𝒊𝒐𝒄𝒂𝒏𝒅𝒐 𝒄𝒐𝒏 ${text}'
+if (!text) throw `[❗] 𝒎𝒂 𝒈𝒂𝒚 𝒅𝒂𝒊 𝒖𝒏 𝒄𝒂𝒛𝒛𝒐 𝒅𝒊 𝒏𝒐𝒎𝒆 𝒂𝒍𝒍𝒂 𝒔𝒕𝒂𝒏𝒛𝒂\n◉ ${usedPrefix + command} stanza 1`
 let room = Object.values(conn.game).find(room => room.state === 'WAITING' && (text ? room.name === text : true))
 if (room) {
-await m.reply('[🕹️] 𝐋𝐀 𝐏𝐀𝐑𝐓𝐈𝐓𝐀 𝐒𝐓𝐀 𝐈𝐍𝐈𝐙𝐈𝐀𝐍𝐃𝐎, 𝐔𝐍 𝐆𝐈𝐎𝐂𝐀𝐓𝐎𝐑𝐄 𝐒𝐈 𝐄̀ 𝐔𝐍𝐈𝐓𝐎')
+await m.reply('[🕹️] 𝐋𝐀 𝐏𝐀𝐑𝐓𝐈𝐓𝐀 𝐒𝐓𝐀 𝐈𝐍𝐈𝐙𝐈𝐀𝐍𝐃𝐎, 𝐔𝐍 𝐆𝐀𝐘 𝐒𝐈 𝐄 𝐔𝐍𝐈𝐓𝐎')
 room.o = m.chat
 room.game.playerO = m.sender
 room.state = 'PLAYING'
 let arr = room.game.render().map(v => {
 return {
 X: '❎',
-O: '⭕',
+O: '🚫',
 1: '1️⃣',
 2: '2️⃣',
 3: '3️⃣',
@@ -26,7 +26,7 @@ O: '⭕',
 let str = `
 
 ❎ = @${room.game.playerX.split('@')[0]}
-⭕ = @${room.game.playerO.split('@')[0]}
+🚫 = @${room.game.playerO.split('@')[0]}
 
         ${arr.slice(0, 3).join('')}
         ${arr.slice(3, 6).join('')}
