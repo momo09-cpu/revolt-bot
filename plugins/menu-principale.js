@@ -13,11 +13,11 @@ const handler = async (message, { conn, usedPrefix, command }) => {
 
     const menuText = generateMenuText(usedPrefix, botName, userCount);
 
-    const videoPath = path.join(__dirname, '../menu/edit1.mp4'); // Cambia il nome se necessario
+    const imagePath = path.join(__dirname, '../menu/revolt2.jpg'); // Cambia il nome se necessario
     await conn.sendMessage(
         message.chat,
         {
-            video: { url: videoPath },
+            image: { url: imagePath },
             caption: menuText,
             footer: 'Scegli un menu:',
             buttons: [
