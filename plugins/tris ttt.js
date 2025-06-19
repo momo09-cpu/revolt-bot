@@ -35,7 +35,7 @@ isTie = true
 let arr = room.game.render().map(v => {
 return {
 X: '❎',
-O: '⭕',
+O: '🚫',
 1: '1️⃣',
 2: '2️⃣',
 3: '3️⃣',
@@ -53,13 +53,13 @@ let winner = isSurrender ? room.game.currentTurn : room.game.winner
 let str = `
 
 ❎ = @${room.game.playerX.split('@')[0]}
-⭕ = @${room.game.playerO.split('@')[0]}
+🚫 = @${room.game.playerO.split('@')[0]}
 
         ${arr.slice(0, 3).join('')}
         ${arr.slice(3, 6).join('')}
         ${arr.slice(6).join('')}
 
-${isWin ? `@${(isSurrender ? room.game.currentTurn : room.game.winner).split('@')[0]} Ha vinto un biscottino 🍪` : isTie ? 'Pareggio!' : `𝐓𝐮𝐫𝐧𝐨 𝐝𝐢 @${room.game.currentTurn.split('@')[0]}`}
+${isWin ? `@${(isSurrender ? room.game.currentTurn : room.game.winner).split('@')[0]} 𝒉𝒂 𝒗𝒊𝒏𝒕𝒐 𝒖𝒏 𝒑𝒓𝒆𝒔𝒆𝒓𝒗𝒂𝒕𝒊𝒗𝒐 𝒃𝒖𝒄𝒂𝒕𝒐 😂` : isTie ? 'Pareggio!' : `𝐓𝐮𝐫𝐧𝐨 𝐝𝐢 @${room.game.currentTurn.split('@')[0]}`}
 `.trim()
 let users = global.db.data.users
 if ((room.game._currentTurn ^ isSurrender ? room.x : room.o) !== m.chat)
