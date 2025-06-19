@@ -1,5 +1,5 @@
 
-/*
+
 let handler = async (m, { conn, args, groupMetadata, participants, usedPrefix, command, isBotAdmin, isSuperAdmin }) => {
     let bot = global.db.data.settings[conn.user.jid] || {};
     if (!bot.restrict || !isBotAdmin) return;
