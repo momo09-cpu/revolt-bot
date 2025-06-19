@@ -26,7 +26,7 @@ const handler = async (message, { conn, usedPrefix, command }) => {
 
     const menuText = generateMenuText(usedPrefix, botName, userCount);
 
-    const imagePath = path.join(__dirname, '../menu/revolt4.png'); 
+    const imagePath = path.join(__dirname, '../menu/revol4.png'); 
 
     await conn.sendMessage(
         message.chat,
