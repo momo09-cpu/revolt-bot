@@ -27,7 +27,7 @@ const handler = async (message, { conn, usedPrefix, command }) => {
 
     const menuText = generateMenuText(usedPrefix, botName, userCount);
 
-const imagePath = './menu/revolt-bot.jpg';
+const imagePath = './menu/reolt-bot.jpg';
     await conn.sendMessage(
         message.chat,
         {
