@@ -3,7 +3,7 @@
 let handler = async (m, { conn, isAdmin, isBotAdmin, participants, groupMetadata }) => {
   if (!m.isGroup) return m.reply("Questo comando si usa solo nei gruppi.")
   if (!isBotAdmin) return m.reply("Devo essere admin per accettare le richieste.")
-  if (!isAdmin) return m.reply("Solo gli admin del gruppo possono usare questo comando.")
+  if (!isAdmin) return m.reply("𝑠𝑜𝑙𝑜 𝑔𝑙𝑖 𝑎𝑑𝑚𝑖𝑛 𝑑𝑒𝑙 𝑔𝑟𝑢𝑝𝑝𝑜 𝑝𝑜𝑠𝑠𝑜𝑛𝑜 𝑢𝑠𝑎𝑟𝑒 𝑞𝑢𝑒𝑠𝑡𝑜 𝑐𝑜𝑚𝑎𝑛𝑑𝑜.")
 
   try {
     const groupId = m.chat
@@ -18,7 +18,7 @@ let handler = async (m, { conn, isAdmin, isBotAdmin, participants, groupMetadata
         await conn.groupRequestParticipantsUpdate(groupId, [p.jid], 'approve')
         accettati++
       } catch (e) {
-        console.log(`[ERRORE] Non sono riuscito ad accettare ${p.jid}:`, e)
+        console.log(`[ERRORE] ɴᴏɴ sᴏɴᴏ ʀɪᴜsᴄɪᴛᴏ ᴀᴅ ᴀᴄᴄᴇᴛᴛᴀʀᴇ ${p.jid}:`, e)
       }
     }
 
