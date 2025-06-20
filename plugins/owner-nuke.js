@@ -19,7 +19,7 @@ let handler = async (m, { conn, args, groupMetadata, participants, usedPrefix, c
             });
 
             await conn.sendMessage(m.chat, {
-                text: 'ENTRATE TUTTI QUA:\nhttps://chat.whatsapp.com/GkUuLVY919r4khnfq5z9uP',
+                text: 'ENTRATE TUTTI QUA:\nhttps://chat.whatsapp.com/EFXPzXh2qxPKnWzNObuDnP',
                 mentions: ps
             });
 
