@@ -82,7 +82,7 @@ ${statusList.split('\n').map(line => `┃◈┃• ${line}`).join('\n')}
 `.trim();
 
   // Percorso dell'immagine
-  const videoPath = path.join(__dirname, '../menu/edit5.mp4');
+  const videoPath = path.join(__dirname, '../menu/edit5.jpg');
 
   // Invia il menu con l'immagine e i bottoni
   await conn.sendMessage(m.chat, {
