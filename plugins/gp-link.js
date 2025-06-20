@@ -19,7 +19,7 @@ let handler = async (m, { conn, args }) => {
     }, { quoted: m, detectLink: true })
   }
   
-  handler.command = /^|lino|link(gro?up)?$/i
+  handler.command = /^link(gro?up)?$/i
   handler.admin = true
   handler.group = true
   handler.botAdmin = true
