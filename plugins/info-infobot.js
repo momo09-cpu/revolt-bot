@@ -15,11 +15,13 @@ let format = sizeFormatter({
 let handler = async (m, { conn, usedPrefix }) => {
    let uniqueUsers = new Map()
 
-   global.conns.forEach((conn) => {
-     if (conn.user && conn.ws.socket && conn.ws.socket.readyState !== ws.CLOSED) {
-       uniqueUsers.set(conn.user.jid, conn)
-     }
-   })
+   if (Array.isArray(global.conns)) {
+     global.conns.forEach((conn) => {
+       if (conn.user && conn.ws.socket && conn.ws.socket.readyState !== ws.CLOSED) {
+         uniqueUsers.set(conn.user.jid, conn)
+       }
+     })
+   }
    let users = [...uniqueUsers.values()]
    let totalUsers = users.length
    let totalreg = Object.keys(global.db.data.users).length
@@ -56,7 +58,7 @@ let handler = async (m, { conn, usedPrefix }) => {
          irq: 0
       }
    })
-   	let _muptime
+           let _muptime
     if (process.send) {
       process.send('uptime')
       _muptime = await new Promise(resolve => {
@@ -72,8 +74,8 @@ let handler = async (m, { conn, usedPrefix }) => {
 
    let txt = '`*⭒─ׄ─ׅ─ׄ─⭒ 𝐈𝐍𝐅𝐎-𝐁𝐎𝐓 ⭒─ׄ─ׅ─ׄ─⭒*`\n\n'
        txt += `╭── ︿︿︿︿︿ *⭒   ⭒   ⭒   ⭒   ⭒   ⭒*\n`
-       txt += `┊ ‹‹ *Stato Di* :: *𝐂𝐡𝐚𝐭𝐔𝐧𝐢𝐭𝐲 ดาว⁩*\n`
-       txt += `┊•*⁀➷ °⭒⭒⭒ *【 ✯ 𝐂𝐡𝐚𝐭𝐔𝐧𝐢𝐭𝐲-𝐁𝐨𝐭 ✰ 】*\n`
+       txt += `┊ ‹‹ *Stato Di* :: *𝙧ᥱ𝙫𝗈ᶩէ💠 ดาว⁩*\n`
+       txt += `┊•*⁀➷ °⭒⭒⭒ *【 ✯—͟͞͞★𝙧ᥱ𝙫𝗈ᶩէ★Ᏼo͢Ꭲ ✰ 】*\n`
        txt += `╰─── ︶︶︶︶ ✰⃕  ⌇ *⭒ ⭒ ⭒*   ˚̩̥̩̥*̩̩͙✩\n`
        txt += `┊🪴 [ *Moneta* :: *Unitycoins 💶*\n`
        txt += `┊🍟 [ *Prefisso* :: *【  ${usedPrefix}  】*\n`
@@ -100,7 +102,7 @@ await conn.sendFile(m.chat, img, 'thumbnail.jpg', txt, m, null, rcanal)
 }
 handler.help = ['info']
 handler.tags = ['main']
-handler.command = ['info', 'infobot']
+handler.command = ['infobot']
 
 export default handler
 
