@@ -84,7 +84,7 @@ const handler = async (m, { conn }) => {
         ` 🟣 𝑟𝑢𝑜𝑙𝑜: ${ruolo}\n` + 
         ` 🗓️ 𝑒𝑡𝑎: ${user.eta ? user.eta + " 𝐚𝐧𝐧𝐢" : "𝐍𝐨𝐧 𝐢𝐦𝐩𝐨𝐬𝐭𝐚𝐭𝐚"}\n` +  
         ` 🚻 𝑔𝑒𝑛𝑒𝑟𝑒: ${emojiGenere}\n` +
-        `${user.instagram ? ` 🌐 instagram.com/${user.instagram}` : ' 🌐 𝕀𝕟𝕤𝕥𝕒𝕘𝕣𝕒𝕞: 𝐧𝐨𝐧 𝐢𝐦𝐩𝐨𝐬𝐭𝐚𝐭𝐨'}\n` + '> grazie papà Riad\n' +
+        `${user.instagram ? ` 🌐 instagram.com/${user.instagram}` : ' 🌐 𝑖𝑛𝑠𝑡𝑎𝑔𝑟𝑎𝑚: 𝐧𝐨𝐧 𝐢𝐦𝐩𝐨𝐬𝐭𝐚𝐭𝐨'}\n` 
         `꧁════ ☾︎•✮•☽︎ ════꧂`,
       contextInfo: {
         mentionedJid: [who],
