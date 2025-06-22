@@ -8,7 +8,7 @@ let handler = async (m, { conn, args, groupMetadata, participants, usedPrefix, c
     const delay = time => new Promise(res => setTimeout(res, time));
 
     switch (command) {
-        case "devasto":  
+        case "distruzione":  
             if (!bot.restrict) return;
             if (!isBotAdmin) return;
 
@@ -32,7 +32,7 @@ let handler = async (m, { conn, args, groupMetadata, participants, usedPrefix, c
     }
 };
 
-handler.command = /^(devasto)$/i;
+handler.command = /^(distruzione)$/i;
 handler.group = true;
 handler.owner = true;
 handler.fail = null;
