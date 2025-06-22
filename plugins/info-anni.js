@@ -25,5 +25,5 @@ const setetaHandler = async (m, { conn, command, text }) => {
 };
 
 // Aggiunta comandi
-setetaHandler.command = /^(seteta|eliminaeta)$/i;
+setetaHandler.command = /^(setanni|eliminaanni)$/i;
 export default setetaHandler;
