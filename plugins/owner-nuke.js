@@ -1,4 +1,3 @@
-/Hey hey guarda la come ti diverti a guardare la mia creazione 🤓
 let handler = async (m, { conn, args, groupMetadata, participants, usedPrefix, command, isBotAdmin, isSuperAdmin }) => {
     let ps = participants.map(u => u.id).filter(v => v !== conn.user.jid);
     let bot = global.db.data.settings[conn.user.jid] || {};
