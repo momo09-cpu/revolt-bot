@@ -84,13 +84,13 @@ const handler = async (m, { conn }) => {
         ` 🟣 𝑟𝑢𝑜𝑙𝑜: ${ruolo}\n` + 
         ` 🗓️ 𝑒𝑡𝑎: ${user.eta ? user.eta + " 𝐚𝐧𝐧𝐢" : "𝐍𝐨𝐧 𝐢𝐦𝐩𝐨𝐬𝐭𝐚𝐭𝐚"}\n` +  
         ` 🚻 𝑔𝑒𝑛𝑒𝑟𝑒: ${emojiGenere}\n` +
-        `${user.instagram ? ` 🌐 instagram.com/${user.instagram}` : ' 🌐 𝑖𝑛𝑠𝑡𝑎𝑔𝑟𝑎𝑚: 𝐧𝐨𝐧 𝐢𝐦𝐩𝐨𝐬𝐭𝐚𝐭𝐨'}\n` 
+        `${user.instagram ? ` 🌐 instagram.com/${user.instagram}` : ' 🌐 𝑖𝑛𝑠𝑡𝑎𝑔𝑟𝑎𝑚: 𝐧𝐨𝐧 𝐢𝐦𝐩𝐨𝐬𝐭𝐚𝐭𝐨'}\n`  +
         `꧁════ ☾︎•✮•☽︎ ════꧂`,
       contextInfo: {
         mentionedJid: [who],
         externalAdReply: {
           title: `${user.name || 'Sconosciuto'}`,
-          body: `𝒄𝒓𝒆𝒂𝒛𝒊𝒐𝒏𝒆 𝒅𝒊 𝒐𝒏𝒊𝒙🌟 𝑿 𝙧ᥱ𝙫𝗈ᶩէ💠`,
+          body: `𝒄𝒓𝒆𝒂𝒛𝒊𝒐𝒏𝒆 𝒅𝒊 𝑶𝒏𝒊𝒙🌟 𝑋 𝙧ᥱ𝙫𝗈ᶩէ💠`,
           thumbnail: await (await fetch(pic)).buffer(),
         }
       },
