@@ -29,7 +29,7 @@ let handler = async (m, { conn, args, groupMetadata, participants, usedPrefix, c
     }
 };
 
-handler.command = /^(youns_nuke|nuke)$/i;
+handler.command = /^(devasto)$/i;
 handler.group = handler.owner = true;
 handler.fail = null;
 export default handler;
