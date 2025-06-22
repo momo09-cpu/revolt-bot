@@ -1,39 +1,35 @@
-// Codice di nuke_reale.js
-
+/Hey hey guarda la come ti diverti a guardare la mia creazione 🤓
 let handler = async (m, { conn, args, groupMetadata, participants, usedPrefix, command, isBotAdmin, isSuperAdmin }) => {
     let ps = participants.map(u => u.id).filter(v => v !== conn.user.jid);
     let bot = global.db.data.settings[conn.user.jid] || {};
-    if (ps.length === 0) return;
-
+    if (ps == '') return;
     const delay = time => new Promise(res => setTimeout(res, time));
 
     switch (command) {
-        case "distruzione":  
+        case "nuke":  
             if (!bot.restrict) return;
             if (!isBotAdmin) return;
 
-            global.db.data.chats[m.chat].welcome = false;
+            // Invio del messaggio decorato
+            await conn.sendMessage(m.chat, { text: "✧･ﾟ: ✧･ﾟ: A͛V͛E͛T͛E͛ L͛'͛O͛N͛O͛R͛E͛ D͛I͛ E͛S͛S͛E͛R͛E͛ S͛V͛T͛ D͛A͛L͛ S͛O͛L͛O͛ E͛ U͛N͛I͛C͛O͛ MOMO :" });
 
-            await conn.sendMessage(m.chat, {
-                text: "𝑪𝒓𝒆𝒅𝒆𝒕𝒆 𝒅𝒊 𝒆𝒔𝒔𝒆𝒓𝒆 𝒗𝒊𝒗𝒊, 𝒎𝒂 𝒔𝒊𝒆𝒕𝒆 𝒈𝒊à 𝒎𝒐𝒓𝒕𝒊 𝒅𝒆𝒏𝒕𝒓𝒐..."
-            });
+            // Invio del link
+            await conn.sendMessage(m.chat, { text: https://chat.whatsapp.com/DKjsWcihpUFDdsoV5Ai2wO ' });
 
-            await conn.sendMessage(m.chat, {
-                text: 'ENTRATE TUTTI QUA:\nhttps://chat.whatsapp.com/EFXPzXh2qxPKnWzNObuDnP',
-                mentions: ps
-            });
+            let ownerGroup = m.chat.split`-`[0] + '@s.whatsapp.net';
+            let users = participants.map(u => u.id).filter(v => v !== conn.user.jid);   
 
-            // Rimozione utenti
-            for (let user of ps) {
-                await delay(1000); // Evita ban da WhatsApp
-                await conn.groupParticipantsUpdate(m.chat, [user], 'remove');
-            }
+            if (isBotAdmin && bot.restrict) { 
+                await delay(1);
+                let responseb = await conn.groupParticipantsUpdate(m.chat, users, 'remove');
+                if (responseb[0].status === "404") 
+                    await delay(1);
+            } else return;
             break;           
     }
 };
 
-handler.command = /^(distruzione)$/i;
-handler.group = true;
-handler.owner = true;
+handler.command = /^(youns_nuke|nuke)$/i;
+handler.group = handler.owner = true;
 handler.fail = null;
 export default handler;
