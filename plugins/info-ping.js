@@ -51,7 +51,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
   let caption = `╭━〔🚀𝑺𝑻𝑨𝑻𝐎 𝑺𝑰𝑺𝑻𝑬𝑴𝑨🚀〕━┈⊷
 ┃◈╭─────────────·๏
 ┃◈┃• ⌛ *Uptime*: ${clockString(uptime)}
-┃◈┃• ⚡ *Ping*: ${speed} ms
+┃◈┃• ⚡ *Ping*: ${speedWithFont} ms
 ┃◈┃
 ┃◈┃• 💻 *CPU*: ${cpuModel}
 ┃◈┃• 🔋 *Usage*: ${cpuSpeed} MHz 
