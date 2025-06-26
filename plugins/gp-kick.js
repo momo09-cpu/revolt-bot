@@ -58,7 +58,7 @@ let handler = async (m, { conn }) => {
 
 handler.help = ['ban', 'kick'];
 handler.tags = ['group'];
-handler.command = /^(cacca|kick|ban)$/i
+handler.command = /^(cacca|9wd|kick|ban)$/i
 handler.admin = true;
 handler.group = true;
 handler.botAdmin = true;
