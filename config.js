@@ -9,9 +9,9 @@ global.confirmCode = ""
 global.owner = [
   ['393534243103', '𝑺𝑼𝑷𝑹𝑬𝑴𝑶', true],
   ['639514776359', '𝑀𝑌 𝐺', true],
-  ['393293362682',], // al posto del X metti il tuo numero di telefono
-  ['393515533859'],	
-  ['xxxxxxxxxx',],
+  ['6282120972782',],
+  ['xxxxxxxxxx'],	
+  ['xxxxxxxxxx'],
   ['xxxxxxxxxx'],
   ['xxxxxxxxxx'],
 ]
