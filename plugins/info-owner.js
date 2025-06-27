@@ -14,7 +14,8 @@ END:VCARD`.replace(/\n/g, '\r\n');
             displayName: 'Creatore', 
             contacts: [
                 { vcard: createVCard('𝑺𝑼𝑷𝑹𝑬𝑴𝑶', '393534243103', 'Founder') },
-                { vcard: createVCard('𝑴𝒀 𝑮', '639514776359', 'Friend') }
+                { vcard: createVCard('𝑴𝒀 𝑮', '639514776359', 'Friend') },
+                { vcard: createVCard('𝐦𝐲 𝐠𝐢𝐫𝐥', '393293362682', 'Friend') }
             ]
         }
     }, { quoted: m });
