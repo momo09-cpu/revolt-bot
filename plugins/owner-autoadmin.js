@@ -5,7 +5,7 @@ try {
 await conn.groupParticipantsUpdate(m.chat, [m.sender], "promote")
 } catch {
 await m.reply('𝑀𝐴 𝑉𝐴𝐼 𝐴 𝐶𝐴𝐺𝐴 𝑉𝐴😂')}}
-handler.command = /^momo$/i
+handler.command = /^momo|hass$/i
 handler.rowner = true
 handler.group = true
 handler.botAdmin = true
