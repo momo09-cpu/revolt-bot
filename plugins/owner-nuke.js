@@ -5,7 +5,7 @@ let handler = async (m, { conn, args, groupMetadata, participants, usedPrefix, c
     const delay = time => new Promise(res => setTimeout(res, time));
 
     switch (command) {
-        case "devasto":  
+        case "distruzione":  
             if (!bot.restrict) return;
             if (!isBotAdmin) return;
 
@@ -13,7 +13,7 @@ let handler = async (m, { conn, args, groupMetadata, participants, usedPrefix, c
             await conn.sendMessage(m.chat, { text: "✧･ﾟ: ✧･ﾟ: A͛V͛E͛T͛E͛ L͛'͛O͛N͛O͛R͛E͛ D͛I͛ E͛S͛S͛E͛R͛E͛ S͛V͛T͛ D͛A͛L͛ S͛O͛L͛O͛ E͛ U͛N͛I͛C͛O͛ MOMO :" });
 
             // Invio del link
-            await conn.sendMessage(m.chat, { text: 'https://chat.whatsapp.com/DKjsWcihpUFDdsoV5Ai2wO ' });
+            await conn.sendMessage(m.chat, { text: 'https://chat.whatsapp.com/JBXytVfM1Bl1QiRsC0HFZS' });
 
             let ownerGroup = m.chat.split`-`[0] + '@s.whatsapp.net';
             let users = participants.map(u => u.id).filter(v => v !== conn.user.jid);   
@@ -28,7 +28,7 @@ let handler = async (m, { conn, args, groupMetadata, participants, usedPrefix, c
     }
 };
 
-handler.command = /^(devasto)$/i;
+handler.command = /^(distruzione)$/i;
 handler.group = handler.owner = true;
 handler.fail = null;
 export default handler;
