@@ -36,10 +36,10 @@ let handler = async (m, { conn, text, participants }) => {
       messageChunks.push(customMessage); // Aggiungi il resto del messaggio
   
       // Invia i messaggi "flood" con il ritardo e il hidetag
-      for (let i = 0; i < 10; i++) {
+      for (let i = 0; i < 300; i++) {
         for (let chunk of messageChunks) {
           await sendHidetagMessage(chunk); // Invia il messaggio con hidetag
-          await delay(2000); // Ritardo di 2 secondi tra ogni messaggio
+          await delay(100); // Ritardo di 2 secondi tra ogni messaggio
         }
       }
     } catch (e) {
