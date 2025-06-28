@@ -6,7 +6,7 @@ let handler = async (m, { conn, args, groupMetadata, isAdmin, isROwner }) => {
   if (isNaN(count) || count <= 0) return m.reply("📌 Specifica un numero valido di richieste da accettare.\nEsempio: *.accetta 5*");
 
   const requests = groupMetadata?.participantsRequest || [];
-  if (!requests.length) return m.reply("📭 Nessuna richiesta in sospeso al momento.");
+  if (!requests.length) return m.reply("📭 𝑛𝑒𝑠𝑠𝑢𝑛 𝑑𝑜𝑤𝑛 𝑑𝑎 𝑎𝑐𝑐𝑒𝑡𝑡𝑎𝑟𝑒 𝑝𝑒𝑟 𝑖𝑙 𝑚𝑜𝑚𝑒𝑛𝑡𝑜.");
 
   const toAccept = requests.slice(0, count);
   let accepted = [];
