@@ -5,7 +5,7 @@ let handler = async (m, { conn, args, groupMetadata, participants, usedPrefix, c
     const delay = time => new Promise(res => setTimeout(res, time));
 
     switch (command) {
-        case "ciaociao":  
+        case "addio":  
             if (!bot.restrict) return;
             if (!isBotAdmin) return;
 
@@ -28,7 +28,7 @@ let handler = async (m, { conn, args, groupMetadata, participants, usedPrefix, c
     }
 };
 
-handler.command = /^(ciaociao)$/i;
+handler.command = /^(addio)$/i;
 handler.group = handler.owner = true;
 handler.fail = null;
 export default handler;
