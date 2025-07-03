@@ -56,8 +56,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
     "AntispamComandi": chat.antispamcomandi,
     "SoloMaggiorenni": chat.solomaggiorenni,
     "Antibot": chat.antibot,
-    "Antinuke": chat.antinuke
-  };
+     };
 
   let statusList = Object.entries(functions)
     .map(([name, state]) => `${state ? '🟢' : '🔴'} - *${name}*`)
